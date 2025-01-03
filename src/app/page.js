@@ -4,12 +4,11 @@ import Contact from "./components/contact";
 import Resume from "./components/resume";
 import Footer from "./components/footer";
 import Skills from "./components/skills";
-import { Montserrat } from '@next/font/google'
+import { Montserrat } from 'next/font/google'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['400', '700']
-
 });
 
 function MyApp() {
