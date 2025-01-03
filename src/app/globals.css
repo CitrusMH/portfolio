@@ -2,20 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+    background-image: linear-gradient(#595959 , transparent 2.5px), linear-gradient(to right, #595959, transparent 2.5px);
+    background-size: 75px 75px;
+    background-color: #131313;
+    border-right: 2.5px solid #595959;
+}
+.gradient-background {
+    background: rgb(26,26,26);
+    background: linear-gradient(0deg, #0b0b0b 0%, transparent 100%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
 }
