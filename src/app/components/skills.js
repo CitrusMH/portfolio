@@ -3,15 +3,15 @@ import React from "react";
 function Skills() {
   return (
     <>
+      <h1 className="text-4xl font-bold">Competências</h1>
       <section className="flex lg:max-w-3xl bg-primary p-2 flex-col md:flex-row rounded-md border border-secondary my-2 items-center fade-in">
         <div className="flex flex-col p-4">
-          <h1 className="text-4xl font-bold">Competências</h1>
           <ul className="list-disc list-inside mt-4 text-lg">
             <li>
               <strong>Desenvolvimento Web:</strong>
               <p className="ml-6">
-                React, Next.js, HTML, CSS, Salesforce Commerce Cloud, Node.js (Express), JavaScript e
-                TypeScript.
+                React, Next.js, HTML, CSS, Salesforce Commerce Cloud, Node.js
+                (Express), JavaScript e TypeScript.
               </p>
             </li>
             <li>

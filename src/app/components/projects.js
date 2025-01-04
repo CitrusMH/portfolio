@@ -61,6 +61,9 @@ function Projects() {
 
   return (
     <>
+      <div>
+        <h1 className="text-5xl font-semibold text-center p-4">Projetos</h1>
+      </div>
       <section className="flex bg-primary flex-col md:flex-row rounded-md border border-secondary my-2 justify-around flex-wrap text-justify fade-in">
         {projectData.map((project) => (
           <div

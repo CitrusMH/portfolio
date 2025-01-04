@@ -4,23 +4,30 @@ import Image from "next/image";
 function About() {
   return (
     <>
+      <h1 className="text-4xl font-bold self-center">Sobre Mim</h1>
       <section className="flex bg-primary py-6 px-4 flex-col md:flex-row rounded-md border border-secondary my-2 items-center md:items-start text-justify fade-in">
         <div className="flex flex-col p-4">
-          <h1 className="text-4xl font-bold">Sobre Mim</h1>
           <p className="text-lg">
             Sou <b className="text-blue-400">Desenvolvedor Web Full-Stack</b>{" "}
-            com sólida experiência em React, Next.js, JavaScript e TypeScript e
-            Salesforce Commerce Cloud.
+            com sólida experiência em tecnologias modernas como React, Next.js,
+            JavaScript, TypeScript e Salesforce Commerce Cloud. Ao longo da
+            minha carreira, tenho me especializado no desenvolvimento e
+            manutenção de aplicações web robustas e escaláveis, atendendo às
+            necessidades específicas de clientes e empresas em diversos setores.
           </p>
           <p className="text-lg mt-2">
-            Atuo no desenvolvimento e manutenção de aplicações robustas, com
-            foco em integrações e customizações no back-end da plataforma. Tenho
-            conhecimento em armazenamento na nuvem (AWS S3), versionamento com
-            Git e entrega de soluções escaláveis.
+            Minha atuação é marcada pelo foco em integrações complexas e
+            customizações eficientes no back-end da plataforma, garantindo a
+            entrega de soluções personalizadas que agregam valor aos negócios.
+            Também possuo experiência prática com armazenamento em nuvem (AWS
+            S3), versionamento de código com Git e práticas de DevOps para
+            facilitar a entrega contínua e o desempenho das aplicações.
           </p>
           <p className="text-lg mt-2">
-            Valorizo a colaboração em equipes ágeis e busco criar aplicações
-            modernas que unem eficiência técnica e impacto nos negócios.
+            Sou apaixonado por resolver desafios complexos e por aprender
+            constantemente novas tecnologias e práticas, o que me mantém
+            atualizado e pronto para enfrentar os cenários em constante evolução
+            do desenvolvimento web.
           </p>
           <div className="flex mt-4">
             <a
@@ -57,7 +64,7 @@ function About() {
             width={400}
             height={400}
             alt="Foto de perfil"
-            className="rounded-lg p-4"
+            className="rounded-lg p-4 w-full"
           />
         </div>
       </section>
