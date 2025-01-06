@@ -5,27 +5,27 @@ function Projects() {
   const projectData = [
     {
       id: 1,
-      title: "Suporte - Vedacit",
+      title: "Suporte - BeeCloud",
       description:
-        "Trabalhando na BeeCloud, ofereci suporte ao site institucional da Vedacit além de realizar a criação de algumas páginas. Utilizamos Next.js, React e Tailwind CSS na construção do Site. Além disso, integramos o site com o CMS Strapi. Criamos ambientes de Staging e Produção no Heroku (Back-end + Heroku Postgres e Front-end). também fiquei encarregado de migrar os assets que antes eram alocados na Salesforce para o AWS S3 Bucket.",
-      link: "https://www.vedacit.com.br/",
-      image: "/images/vedacit.png",
+        "Na BeeCloud, ofereci suporte ao site institucional de um cliente e desenvolvi novas páginas usando Next.js, React e Tailwind CSS. A solução utilizava o CMS Strapi, configurei ambientes de staging no Heroku (incluindo Heroku Postgres) e realizei a migração de assets da Salesforce para o AWS S3.",
+      link: "",
+      image: "/next.svg",
       tag: "Javascript",
     },
     {
       id: 2,
-      title: "Suporte - Nadir Figueiredo",
+      title: "Suporte - BeeCloud",
       description:
-        "Trabalhando na BeeCloud, ofereci suporte ao E-Commerce da Nadir Figueiredo. Criado a partir do Salesforce Commerce Cloud, sua contrução é feita a partir do PWA KIT, que por sua vez, utiliza React Para o Front-End. Além disso, utilizamos o SFRA baseado em Express.js para o Back-End. Atualmente sou responsável por manter o site atualizado e realizar ajustes de acordo com as necessidades do cliente (tanto Front-End, quanto Back-End).",
-      link: "https://www.nadir.com.br",
-      image: "/images/nadir.png",
-      tag: "Javascript",
+        "Na BeeCloud, ofereci suporte a um E-Commerce desenvolvido com Salesforce Commerce Cloud. O projeto utiliza o PWA KIT com React no Front-End e o SFRA, baseado em Express.js, no Back-End. Sou responsável por manter o site atualizado e implementar ajustes conforme as necessidades do cliente, abrangendo tanto o Front-End quanto o Back-End.",
+      link: "",
+      image: "/images/react.webp",
+      tag: "Commerce Cloud",
     },
     {
       id: 3,
       title: "POO - Sales Manager",
       description:
-        "Este projeto tem como objetivo gerenciar produtos, clientes e pedidos dentro de bancos de dados. Utilizando o poder do SpringData para interação com o banco de dados e Thymeleaf para renderização de páginas web, Sales Manager oferece uma solução robusta e eficiente para gestão empresarial.",
+        "Projeto desenvolvido para gerenciar produtos, clientes e pedidos em bancos de dados. Utiliza Spring Data para interação com o banco e Thymeleaf para renderização de páginas web, oferecendo uma solução robusta e eficiente para a gestão empresarial.",
       link: "https://github.com/CitrusMH/SalesManager_ProjetoPOO2024",
       image: "/images/spring.png",
       tag: "Java",
@@ -80,13 +80,15 @@ function Projects() {
             <h3 className="text-xl font-semibold mt-2">{project.title}</h3>
             <p className="text-blue-300">{project.tag}</p>
             <p className="mb-4">{project.description}</p>
-            <a
-              href={project.link}
-              className="font-semibold text-blue-400 hover:text-blue-500"
-              target="_blank"
-            >
-              Mais Detalhes
-            </a>
+            {project.link === "" ? null : (
+              <a
+                href={project.link}
+                className="font-semibold text-blue-400 hover:text-blue-500"
+                target="_blank"
+              >
+                Mais Detalhes
+              </a>
+            )}
           </div>
         ))}
       </section>

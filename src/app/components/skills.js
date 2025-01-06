@@ -3,7 +3,7 @@ import React from "react";
 function Skills() {
   return (
     <>
-      <h1 className="text-4xl font-bold">Competências</h1>
+      <h1 className="text-4xl font-bold self-center">Competências</h1>
       <section className="flex lg:max-w-3xl bg-primary p-2 flex-col md:flex-row rounded-md border border-secondary my-2 items-center fade-in">
         <div className="flex flex-col p-4">
           <ul className="list-disc list-inside mt-4 text-lg">
