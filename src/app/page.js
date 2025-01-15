@@ -14,7 +14,7 @@ const montserrat = Montserrat({
 function MyApp() {
   return (
     <div className={montserrat.className}>
-      <main className="min-h-screen text-white gradient-background flex justify-around md:justify-center flex-col lg:flex-row p-4">
+      <main className="min-h-screen text-white gradient-background flex justify-around md:justify-center flex-col lg:flex-row p-4 2xl:px-52 md:py-16">
         <div className="flex flex-col lg:mr-8">
           <About />
           <Projects />
