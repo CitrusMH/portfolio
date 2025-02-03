@@ -64,7 +64,7 @@ function Projects() {
       <div>
         <h1 className="text-5xl font-semibold text-center p-4">Projetos</h1>
       </div>
-      <section className="flex bg-primary flex-col md:flex-row rounded-md border border-secondary my-2 justify-around flex-wrap text-justify fade-in">
+      <section className="flex bg-primary flex-col md:flex-row rounded-md border border-secondary my-2 justify-around flex-wrap   fade-in">
         {projectData.map((project) => (
           <div
             key={project.id}

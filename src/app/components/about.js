@@ -5,7 +5,7 @@ function About() {
   return (
     <>
       <h1 className="text-4xl font-bold self-center">Sobre Mim</h1>
-      <section className="flex bg-primary py-6 px-4 flex-col md:flex-row rounded-md border border-secondary my-2 items-center md:items-start text-justify fade-in">
+      <section className="flex bg-primary py-6 px-4 flex-col md:flex-row rounded-md border border-secondary my-2 items-center md:items-start   fade-in">
         <div className="flex flex-col p-4">
           <p className="text-lg">
             Sou <b className="text-blue-400">Desenvolvedor Web Full-Stack</b>{" "}
