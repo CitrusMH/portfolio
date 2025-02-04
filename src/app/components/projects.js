@@ -5,30 +5,30 @@ function Projects() {
   const projectData = [
     {
       id: 1,
-      title: "Suporte - BeeCloud",
+      title: "Suporte Técnico & Front-End - BeeCloud",
       description:
-        "Na BeeCloud, ofereci suporte ao site institucional de um cliente e desenvolvi novas páginas usando Next.js, React e Tailwind CSS. A solução utilizava o CMS Strapi, configurei ambientes de staging no Heroku (incluindo Heroku Postgres) e realizei a migração de assets da Salesforce para o AWS S3.",
+        "Modernização do site institucional com arquitetura SSR (Server-Side Rendering). Migração de assets da Salesforce para AWS S3, garantindo alta disponibilidade e redução de latência. Configuração de ambientes de staging no Heroku com integração contínua ao CMS Strapi.",
       link: "",
       image: "/next.svg",
-      tag: "Javascript",
+      tag: "Next.js, React, Tailwind CSS, Strapi, AWS S3",
     },
     {
       id: 2,
-      title: "Suporte - BeeCloud",
+      title: "E-Commerce Scalable - Salesforce Commerce Cloud - BeeCloud",
       description:
-        "Na BeeCloud, ofereci suporte a um E-Commerce desenvolvido com Salesforce Commerce Cloud. O projeto utiliza o PWA KIT com React no Front-End e o SFRA, baseado em Express.js, no Back-End. Sou responsável por manter o site atualizado e implementar ajustes conforme as necessidades do cliente, abrangendo tanto o Front-End quanto o Back-End.",
+        "Manutenção e evolução de plataforma de e-commerce com 10k+ usuários/mês. Otimização de performance do SFRA, implementação de novas features e integrações com APIs RESTful. Desenvolvimento de PWA com SFCC PWA Kit e React.",
       link: "",
       image: "/images/react.webp",
-      tag: "Commerce Cloud",
+      tag: "SFCC PWA Kit, React, SFRA (Express.js)",
     },
     {
       id: 3,
-      title: "POO - Sales Manager",
+      title: "Sales Manager - Sistema de Gestão Empresarial",
       description:
-        "Projeto desenvolvido para gerenciar produtos, clientes e pedidos em bancos de dados. Utiliza Spring Data para interação com o banco e Thymeleaf para renderização de páginas web, oferecendo uma solução robusta e eficiente para a gestão empresarial.",
+        "Plataforma full-stack para gestão de vendas, clientes e inventário, adotando princípios de Clean Architecture. Integração com APIs RESTful e relatórios dinâmicos para tomada de decisão estratégica. ",
       link: "https://github.com/CitrusMH/SalesManager_ProjetoPOO2024",
       image: "/images/spring.png",
-      tag: "Java",
+      tag: "Java, Spring Boot, Thymeleaf",
     },
     {
       id: 4,
@@ -37,16 +37,16 @@ function Projects() {
         "Ferramenta que recebe inputs JSON e migra arquivos para o AWS S3 Bucket especificado no arquivo env. Feito usando Node.Js e AWS SDK.",
       link: "https://github.com/CitrusMH/AWS-S3-Migration-Tool",
       image: "/images/nodejs.webp",
-      tag: "Javascript",
+      tag: "Node.js, AWS SDK, JSON",
     },
     {
       id: 5,
       title: "Psicologo Online",
       description:
-        "Ferramenta que te conecta a um psicologo online, integrando GPT 3.5 Turbo, Speech-To-Text e Text-To-Speech. Feito com Next.js e Tailwind CSS",
+        "Ferramenta que simula um psicologo online, integrando GPT 3.5 Turbo, Speech-To-Text e Text-To-Speech. Feito com Next.js e Tailwind CSS",
       link: "https://github.com/CitrusMH/Psicologo-Online",
       image: "/next.svg",
-      tag: "Javascript",
+      tag: "Next.js, OpenAI GPT-3.5, Web Speech API",
     },
     {
       id: 6,
@@ -55,14 +55,14 @@ function Projects() {
         "Gerenciador de Oficina Criado em Express e Node.js. Utiliza banco de dados MySQL e conexão via Sequelize para criar e gerenciar registros.",
       link: "https://github.com/CitrusMH/ProjetoPSCarros",
       image: "/images/express.svg",
-      tag: "Javascript",
+      tag: "Express.js, Node.js, MySQL, Sequelize",
     },
   ];
 
   return (
     <>
       <div>
-        <h1 className="text-5xl font-semibold text-center p-4">Projetos</h1>
+        <h1 className="text-4xl font-semibold text-center p-4">Projetos</h1>
       </div>
       <section className="flex bg-primary flex-col md:flex-row rounded-md border border-secondary my-2 justify-around flex-wrap   fade-in">
         {projectData.map((project) => (
@@ -78,7 +78,7 @@ function Projects() {
               className="w-full h-48 object-contain"
             />
             <h3 className="text-xl font-semibold mt-2">{project.title}</h3>
-            <p className="text-blue-300">{project.tag}</p>
+            <p className="text-blue-300 my-2 font-bold">{project.tag}</p>
             <p className="mb-4">{project.description}</p>
             {project.link === "" ? null : (
               <a

@@ -5,29 +5,32 @@ function About() {
   return (
     <>
       <h1 className="text-4xl font-bold self-center">Sobre Mim</h1>
-      <section className="flex bg-primary py-6 px-4 flex-col md:flex-row rounded-md border border-secondary my-2 items-center md:items-start   fade-in">
+      <section className="flex bg-primary py-6 px-4 flex-col xl:flex-row rounded-md border border-secondary my-2 items-center md:items-start   fade-in">
         <div className="flex flex-col p-4">
           <p className="text-lg">
             Sou <b className="text-blue-400">Desenvolvedor Web Full-Stack</b>{" "}
-            com sólida experiência em tecnologias modernas como React, Next.js,
-            JavaScript, TypeScript e Salesforce Commerce Cloud. Ao longo da
-            minha carreira, tenho me especializado no desenvolvimento e
-            manutenção de aplicações web robustas e escaláveis, atendendo às
-            necessidades específicas de clientes e empresas em diversos setores.
+            com 2+ anos de experiência na criação de soluções digitais de alto
+            desempenho. Especializado em arquiteturas modernas com React,
+            Next.js, TypeScript e Salesforce Commerce Cloud, atuo tanto no
+            desenvolvimento front-end quanto em integrações back-end complexas,
+            garantindo escalabilidade e eficiência operacional.
           </p>
+          <p className="text-lg mt-2">Minha expertise inclui:</p>
+          <ul className="list-disc">
+            <li className="ml-6">
+              Integrações customizadas em Salesforce Commerce Cloud (SFCC),
+              otimizando processos de e-commerce.
+            </li>
+            <li className="ml-6">Migração e gestão de assets em AWS S3.</li>
+            <li className="ml-6">
+              Desenvolvimento de PWAs (Progressive Web Apps) com SFCC PWA Kit,
+              elevando a performance de lojas virtuais.
+            </li>
+          </ul>
           <p className="text-lg mt-2">
-            Minha atuação é marcada pelo foco em integrações complexas e
-            customizações eficientes no back-end da plataforma, garantindo a
-            entrega de soluções personalizadas que agregam valor aos negócios.
-            Também possuo experiência prática com armazenamento em nuvem (AWS
-            S3), versionamento de código com Git e práticas de DevOps para
-            facilitar a entrega contínua e o desempenho das aplicações.
-          </p>
-          <p className="text-lg mt-2">
-            Sou apaixonado por resolver desafios complexos e por aprender
-            constantemente novas tecnologias e práticas, o que me mantém
-            atualizado e pronto para enfrentar os cenários em constante evolução
-            do desenvolvimento web.
+            Sou movido pela resolução de desafios técnicos e pela busca
+            constante de inovação, sempre alinhando tecnologia às estratégias de
+            negócio.
           </p>
           <div className="flex mt-4">
             <a
