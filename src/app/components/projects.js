@@ -41,12 +41,12 @@ function Projects() {
     },
     {
       id: 5,
-      title: "Psicologo Online",
+      title: "Sistema de Comentários",
       description:
-        "Ferramenta que simula um psicologo online, integrando GPT 3.5 Turbo, Speech-To-Text e Text-To-Speech. Feito com Next.js e Tailwind CSS",
-      link: "https://github.com/CitrusMH/Psicologo-Online",
-      image: "/next.svg",
-      tag: "Next.js, OpenAI GPT-3.5, Web Speech API",
+        "Um sistema de comentários moderno e seguro, construído com Nuxt 3 e Supabase, que proporciona interação em tempo real e uma experiência fluida tanto no desktop quanto em dispositivos móveis.",
+      link: "https://github.com/CitrusMH/trabalho-pw",
+      image: "/images/nuxt.png",
+      tag: "Vue, Nuxt, Supabase",
     },
     {
       id: 6,
